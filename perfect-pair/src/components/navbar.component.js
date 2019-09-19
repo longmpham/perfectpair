@@ -15,7 +15,7 @@ toggleCollapse = () => {
 render() {
   return (
     // <Router>
-      <MDBNavbar color="default-color" dark fixed="top" scrolling transparent expand="md">
+      <MDBNavbar color="default-color" dark fixed="top" scrolling expand="md">
         <MDBNavbarBrand>
           <strong className="white-text"><MDBNavLink to="/">Perfect Pair</MDBNavLink></strong>
         </MDBNavbarBrand>
@@ -43,6 +43,7 @@ render() {
               }
             /> */}
             <MDBNavItem active>
+              {/* className="black-text" to the link below  */}
               <MDBNavLink to="/search" className="nav-link">Begin Searching New Pairs</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>

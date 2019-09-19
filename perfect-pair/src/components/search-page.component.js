@@ -501,17 +501,22 @@ const SearchPage = () => {
       }
     ]
   };
-	
+  
+  const padding = {
+    paddingTop: "80px",
+    boxSizing: "content-box"
+  };
+
   return (
-    <div>
-      
-    </div>
+    <div style={padding}>
       <MDBDataTable
         striped
         bordered
         small
         data={data}
       />
+    </div>
+
 
   );
 }
