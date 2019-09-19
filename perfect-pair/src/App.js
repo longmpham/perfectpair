@@ -7,7 +7,8 @@ import NavbarPage from "./components/navbar.component";
 // import EditExercise from "./components/edit-exercise.component";
 // import CreateExercise from "./components/create-exercise.component";
 import HomePage from "./components/home-page.component";
-import CreateUser from "./components/create-user.component";
+// import CreateUser from "./components/create-user.component";
+import SearchPage from "./components/search-page.component";
 
 import FooterPage from "./components/footer.component";
 
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" component={HomePage} />
         {/* <Route path="/edit/:id" component={EditExercise} /> */}
         {/* <Route path="/create" component={CreateExercise} /> */}
-        <Route path="/user" component={CreateUser} />
+        <Route path="/search" component={SearchPage} />
       <FooterPage />
     </Router>
   );
