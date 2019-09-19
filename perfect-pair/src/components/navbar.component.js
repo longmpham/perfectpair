@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBBtn, MDBFormInline, MDBInputGroup } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 class NavbarPage extends Component {
 state = {
@@ -14,7 +14,7 @@ toggleCollapse = () => {
 
 render() {
   return (
-    <Router>
+    // <Router>
       <MDBNavbar color="default-color" dark fixed="top" scrolling transparent expand="md">
         <MDBNavbarBrand>
           <strong className="white-text"><MDBNavLink to="/">Perfect Pair</MDBNavLink></strong>
@@ -73,7 +73,7 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-    </Router>
+    // </Router>
     );
   }
 }

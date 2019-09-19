@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
+import "../styles/home-page.css";
 
 const SearchPage = () => {
   const data = {
@@ -500,14 +501,18 @@ const SearchPage = () => {
       }
     ]
   };
-
+	
   return (
-    <MDBDataTable
-      striped
-      bordered
-      small
-      data={data}
-    />
+    <div>
+      
+    </div>
+      <MDBDataTable
+        striped
+        bordered
+        small
+        data={data}
+      />
+
   );
 }
 
